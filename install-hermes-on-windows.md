@@ -462,6 +462,8 @@ cat /etc/resolv.conf
 sudo bash -c 'echo "nameserver 114.114.114.114" > /etc/resolv.conf'
 ```
 
+> 如果修复 DNS 后 Hermes 仍然报 `Connection error`，请参阅 **[Hermes Connection Error 完整排障指南](troubleshooting-hermes-connection-error.md)**，其中详细分析了 WSL DNS 失效 + DeepSeek 端点不稳定两个根因及其修复方法。
+
 ### Q6: Docker 容器内 `hermes setup` 提示 `No TTY`
 
 容器内无 TTY，无法运行交互式配置向导。绕过方式：
